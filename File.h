@@ -16,7 +16,7 @@ private:
 
 public:
     File(const std::string& name);
-    void write(std::string& data);
+    void write(const std::string& data);
     std::string read() const;
     void update(std::string& data);
 

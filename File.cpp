@@ -12,7 +12,7 @@ File::File(const std::string& name){
     this->modifiedAt = createdAt;
 }
 
-void File::write(std::string& data){
+void File::write(const std::string& data){
     content = data;
     size = content.size();
     modifiedAt = std::time(nullptr);
